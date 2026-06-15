@@ -1,0 +1,40 @@
+====================================================================
+               LEGAL SCANNER - USAGE GUIDE
+====================================================================
+
+An asynchronous network vulnerability scanner and compliance 
+auditing framework.
+
+--------------------------------------------------------------------
+1. PREREQUISITES
+--------------------------------------------------------------------
+Make sure you have Python 3 installed on your system along with the 
+required modules (asyncio, aiohttp, sqlite3).
+
+To install requirements:
+$ pip install -r requirements.txt
+
+--------------------------------------------------------------------
+2. HOW TO RUN THE SCANNER
+--------------------------------------------------------------------
+Execute the main scanning script from your terminal:
+
+$ python scanner.py
+
+--------------------------------------------------------------------
+3. OPTIONS & ARGUMENTS (If applicable)
+--------------------------------------------------------------------
+- Provide target IPs or networks when prompted by the script.
+- The tool will automatically perform service fingerprinting via 
+  banner grabbing.
+
+--------------------------------------------------------------------
+4. VIEWING THE EVIDENCE LEDGER & REPORTS
+--------------------------------------------------------------------
+- Scan results are automatically saved securely to a hash-chained 
+  SQLite local database (auditable ledger).
+- A clean, automated Markdown report will be generated inside 
+  the /reports directory upon completion.
+
+⚠️ DISCLAIMER: This tool is intended for authorized security auditing 
+and compliance mapping only. Do not scan targets without explicit permission.
